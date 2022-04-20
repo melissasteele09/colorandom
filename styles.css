@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  grid-template-areas:
+"title  saved"
+"blocks  saved"
+"buttons  saved";
+}
+
+header {
+  grid-area: title;
+}
+
+#colorBlocks {
+  grid-area: blocks;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-rows: auto;
+}
+
+#buttons {
+  grid-area: buttons;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#savedPalettes {
+  grid-area: saved;
+}
