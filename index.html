@@ -3,46 +3,84 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!-- <a href="https://www.flaticon.com/free-icons/lock" title="lock icons">Lock icons created by Dreamstale - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/tools-and-utensils" title="Tools and utensils icons">Tools and utensils icons created by surang - Flaticon</a> -->
     <title>ColoRandom</title>
   </head>
   <body>
-    <header>
-      <p id="pageTitle"> ColoRandom</h1>
+    <header id="pageTitle">
+      ColoRandom
     </header>
-    <main id="colorBlocks">
-      <section id="btn1">
-        <button type="button">
-          1
-        </button>
-      </section>
-      <section id="btn2">
-        <button type="button">
-          2
-        </button>
-      </section>
-      <section>
-        <button type="button">
-          3
-        </button>
-      </section>
-      <section>
-        <button type="button">
-          4
-        </button>
-      </section>
-      <section>
-        <button type="button">
-          5
-        </button>
-      </section>
-    </main>
-    <section id="buttons">
-      <button type="button">New Palette</button>
-      <button type="button">Save Palette</button>
-    </section>
-    <section id="savedPalettes">
 
+    <main id="colorBlocks">
+
+      <section id="color1" class="colorBlock">
+        <div id="color1Hex" class="hexCode">
+          <p>
+            #cc9bf2
+            <img src="./assets/unlock.png" alt="unlocked" id="unlocked">
+          </p>
+        </div>
+      </section>
+
+      <section id="color2" class="colorBlock">
+        <div id="color2Hex" class="hexCode">
+          <p>
+            #bb74f2
+            <img src="./assets/unlock.png" alt="unlocked" id="unlocked">
+          </p>
+        </div>
+      </section>
+
+      <section id="color3" class="colorBlock">
+        <div id="color3Hex"class="hexCode">
+          <p>
+            #9b45de
+            <img src="./assets/unlock.png" alt="unlocked" id="unlocked">
+          </p>
+        </div>
+      </section>
+
+      <section id="color4" class="colorBlock">
+        <div id="color4Hex" class="hexCode">
+          <p>
+            #8d26de
+            <img src="./assets/unlock.png" alt="unlocked" id="unlocked">
+          </p>
+        </div>
+      </section>
+
+
+      <section id="color5" class="colorBlock">
+        <div id="color5Hex" class="hexCode">
+          <p>
+            #7f07de
+            <img src="./assets/unlock.png" alt="unlocked" id="unlocked">
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <section id="buttons">
+      <button type="button" id="newButton">New Palette</button>
+      <button type="button" id="savedButton">Save Palette</button>
     </section>
+    <aside id="savedPalettes">
+      <p id="savedTitle">
+        Saved Palettes
+      </p>
+      <div class="savedPalette">
+        <p class="circle" id="circle1"></p>
+        <p class="circle" id="circle2"></p>
+        <p class="circle" id="circle3"></p>
+        <p class="circle" id="circle4"></p>
+        <p class="circle" id="circle5"></p>
+      </div>
+    </aside>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
