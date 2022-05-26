@@ -4,25 +4,154 @@ body {
 "title  saved"
 "blocks  saved"
 "buttons  saved";
+  gap: 50px;
+  background-color: #e6ddc5;
 }
 
 header {
   grid-area: title;
+  font-size: 55px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  border-bottom: solid;
+}
+
+#savedTitle {
+  font-size: 30px;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 77px;
+  color: white;
 }
 
 #colorBlocks {
+  height: 500px;
+  margin-top: 105px;
+  margin-left: 15px;
+  margin-right: -37px;
+  margin-bottom: -100px;
   grid-area: blocks;
   display: grid;
   grid-template-columns: repeat(5, 1fr) ;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
+  gap: 20px;
 }
 
 #buttons {
   grid-area: buttons;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: -200px;
+  margin-bottom: 200px;
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+#newButton {
+  background-color: white;
+  border:1px solid white;
+  border-radius: 25px;
+  font-family: 'Quicksand', sans-serif;
+  color: #e6ddc5;
+  font-size: 25px;
+}
+
+#savedButton {
+  background-color: white;
+  border-radius: 25px;
+  border:1px solid white;
+  font-family: 'Quicksand', sans-serif;
+  color: #e6ddc5;
+  font-size: 25px;
 }
 
 #savedPalettes {
+  display: flex;
   grid-area: saved;
+  display: block;
+  margin-right: -415px;
+  width: 335px;
+  height: 100%;
+  border-left: solid;
+  border-color: white;
+}
+
+.savedPalette {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 12px;
+}
+
+.colorBlock {
+  border: solid;
+  border-width:6px 8px 55px;
+  border-color: white;
+  height: 150px;
+  width: 153px;
+  margin-right: -37px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+#color1 {
+  background-color: #cc9bf2;
+}
+
+#color2 {
+  background-color: #bb74f2;
+}
+
+#color3 {
+  background-color: #9b45de;
+}
+
+#color4 {
+  background-color: #8d26de;
+}
+
+#color5 {
+  background-color: #7f07de;
+}
+
+.hexCode {
+  margin-top: 125px;
+  margin-left: 40px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#unlocked {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.circle {
+  width: 34px;
+height: 34px;
+margin: 15px 14px;
+border-radius: 50px;
+border-style: solid;
+border-width: thin;
+border-color: white;
+}
+
+#circle1 {
+  background-color: #cc9bf2;
+}
+
+#circle2 {
+  background-color: #bb74f2;
+}
+
+#circle3 {
+  background-color: #9b45de;
+}
+
+#circle4 {
+  background-color:#8d26de;
+}
+
+#circle5 {
+background-color: #7f07de;
 }
